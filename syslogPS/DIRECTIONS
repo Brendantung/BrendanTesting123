@@ -1,0 +1,39 @@
+==================================================================
+   ____   ____   _____
+  / __ \ / __ \ / ____|
+ | |  | | |  | | (___
+ | |  | | |  | |\___ \
+ | |__| | |__| |____) |
+  \___\_\\____/|_____/
+
+  _   _ ______ _________          ______  _____  _  __ _____
+ | \ | |  ____|__   __\ \        / / __ \|  __ \| |/ // ____|
+ |  \| | |__     | |   \ \  /\  / | |  | | |__) | ' /| (___
+ | . ` |  __|    | |    \ \/  \/ /| |  | |  _  /|  <  \___ \
+ | |\  | |____   | |     \  /\  / | |__| | | \ \| . \ ____) |
+ |_| \_|______|  |_|      \/  \/   \____/|_|  \_|_|\_|_____/
+
+==================================================================
+
+---------------------Directions and Setup-------------------------
+
+PREREQUISITES:
+    - Python 2.7
+    - Ubuntu Bash environment
+    - Vim text editor
+    
+----------------------syslog-generator.py-------------------------
+
+1. Access developed virtual environment 
+    - cd syslogPS (Change directory to syslogPS)
+    - cd packages (Change directory to pre-developed virutal environment named packages)
+    - source bin/activate (Access python virtual environment)
+    - cd - (Change directory to previous folder syslogPS)
+
+2. Enter in SYSLOG information
+    - vim syslog-generator.py (Edit syslog-generator python file through vim)
+    - Change SYSLOG_IP and PORT to desired syslog server (ex. SYSLOG_IP = '10.0.0.0.1', PORT = 256)
+    - :wq (Save and Exit Python module)
+
+3. Run syslog-generator.py
+    - python2 syslog--generator.py

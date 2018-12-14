@@ -1,0 +1,46 @@
+==================================================================
+   ____   ____   _____
+  / __ \ / __ \ / ____|
+ | |  | | |  | | (___
+ | |  | | |  | |\___ \
+ | |__| | |__| |____) |
+  \___\_\\____/|_____/
+
+  _   _ ______ _________          ______  _____  _  __ _____
+ | \ | |  ____|__   __\ \        / / __ \|  __ \| |/ // ____|
+ |  \| | |__     | |   \ \  /\  / | |  | | |__) | ' /| (___
+ | . ` |  __|    | |    \ \/  \/ /| |  | |  _  /|  <  \___ \
+ | |\  | |____   | |     \  /\  / | |__| | | \ \| . \ ____) |
+ |_| \_|______|  |_|      \/  \/   \____/|_|  \_|_|\_|_____/
+
+==================================================================
+
+
+Syslog Input version 1.0:
+------------------------------------------------------------------
+
+**syslog-generator.py**
+
+Development Environment: Python 2.7
+Created: December 2018
+By: August Gross/Brendan Tung
+
+USAGE:
+- python2 syslog-generator.py or python syslog-generator.py
+
+FUNCTION:
+- This application enables one to pull events from Public Storage VCO and write to Syslog
+- Capabilities:
+    - Pull events from Public Storage VCO (VCO104)
+    - Modify syslog message to fit Common Events Format (CEF Format)
+    - Push updated syslog message to syslog server of specified IP and Socket
+
+REQUIREMENTS:
+- Python 2.7
+- Vim Text Editor
+
+
+FUTURE VERSION:
+- Account for deduplicates
+- Create one line install python environment
+- UDP (currently use TCP) 
